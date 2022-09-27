@@ -24,9 +24,9 @@ void main(){
 
     //❓❓ Lab Question 7:
     //Below this comment, write a for loop that outputs the name and age of all your friends.
-    for (int j = 0; j < 4; j++){
-        cout << myFriends[j];
-        cout << age[j] << endl;
+    for (int i = 0; i < 4; i++){
+        cout << myFriends[i];
+        cout << age[i] << endl;
     }
     
     //❓❓ Lab Question 8:
@@ -37,18 +37,17 @@ void main(){
             oldest = age[j];
         }
     }
-    cout << " My oldest friend is" <<oldest << "years old." <<endl; 
+    cout << " My oldest friend is " << oldest << " years old." <<endl; 
 
     //❓❓ Lab Question 9:
     //Below this comment, that finds the NAME of your oldest friend.
-int oldest = 0;
-    for (int j = 0 ;  j < 4; j++) {
-        if (age[j] > oldest){
-            oldest = age[j];
+oldest = 0;
+string oldestFriendName;
+    for (int i = 0 ;  i < 4; i++) {
+        if (age[i] > oldest){
+            oldest = age[i];
+           oldestFriendName = myFriends [i]; 
         }
     }
-    cout << " My oldest friend is" <<oldest << "years old." <<endl; 
-
-
-
+    cout << " My oldest friend is named " << oldestFriendName <<endl; 
 }
